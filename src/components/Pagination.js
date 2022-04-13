@@ -20,21 +20,21 @@ const Pagination = ({ postsPerPage, totalPosts, paginate }) => {
   return (
     <ul className='pagination text-center d-flex align-items-center justify-content-center'>
             <li className='page-item'>
-                <a onClick={() => getNum(newNumber - 1)} href='!#' className='page-link'>
+                <a onClick={() => getNum(newNumber - 1)} className='page-link'>
                     Prev
                 </a>
             </li>
             {
                 pageNumbers.map(number => (
                     <li key={number} className='page-item'>
-                        <a onClick={() => getNum(number)} href='!#' className='page-link'>
+                        <a onClick={() => getNum(number)} className='page-link'>
                             {number}
                         </a>
                     </li>
                 ))
             }
             <li className='page-item'>
-                <a onClick={() => getNum(newNumber + 1)} href='!#' className='page-link'>
+                <a onClick={() => getNum(newNumber + 1)} className='page-link'>
                     Next
                 </a>
             </li>
